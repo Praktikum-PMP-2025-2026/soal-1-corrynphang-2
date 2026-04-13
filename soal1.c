@@ -12,23 +12,23 @@ level izin, suhu tubuh, kadar radiasi, dan jam kedatangan.
  #include <stdio.h>
  void cek(int izin,int suhu,int radiasi,int jam){
   if (radiasi >=6){
-    printf("TOLAK\n");
+    printf("TOLAK");
   }else if (suhu >= 390){
-    printf("KARANTINA\n");
+    printf("KARANTINA");
   }else if ((izin ==1 && jam <6) || jam >20){
-    printf("TOLAK\n");
+    printf("TOLAK");
   }else if (izin ==1){
-    printf("MASUK\n");
+    printf("MASUK");
   }else if (izin == 2 && radiasi <=2){
     if(jam>=8 && jam<=18){
-        printf("MASUK\n");
+        printf("MASUK");
     }
   }else if (izin ==2){
-    printf("PEMERIKSAAN\n");
+    printf("PEMERIKSAAN");
   }else if ((izin == 3 && radiasi ==0) && suhu<380 ){
-    printf("MASUK\n");
+    printf("MASUK");
   }else{
-    printf("TOLAK\n");
+    printf("TOLAK");
   }
 
  }
